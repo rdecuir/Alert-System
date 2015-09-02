@@ -1,0 +1,26 @@
+<div>
+    <div ng-repeat="alert in socketAlerts">
+        <div ng-switch on="alert.level">
+            <div ng-switch-when="NORM">
+                <div class="alert alert-info"><strong>{{ alert.level }}: </strong>
+                    "{{ alert.msg }}"
+                </div>
+            </div>
+            <div ng-switch-when="INFO">
+                <div class="alert alert-success"><strong>{{ alert.level }}: </strong>
+                    "{{ alert.msg }}"
+                </div>
+            </div>
+            <div ng-switch-when="WARNING">
+                <div class="alert alert-danger"><strong>{{ alert.level }}: </strong>
+                    "{{ alert.msg }}"
+                </div>
+            </div>
+            <div ng-switch-default>
+                <div class="alert alert-warning"><strong>{{ alert.level }}: </strong>
+                    "{{ alert.msg }}"
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
