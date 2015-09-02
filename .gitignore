@@ -11,5 +11,5 @@ pids
 logs
 results
 
-clientSide/node_modules
-clientSide/npm-debug.log
+serverSide/node_modules
+serverSide/npm-debug.log
